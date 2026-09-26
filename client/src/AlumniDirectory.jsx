@@ -11,7 +11,7 @@ function AlumniDirectory() {
         const getProfiles = async () => {
             try {
                 const response = await fetch(
-                    "http://localhost:5000/api/profile/all",
+                    "https://alumni-connect-b13q.onrender.com/api/profile/all",
                     {
                         headers: {
                             Authorization: `Bearer ${token}`,

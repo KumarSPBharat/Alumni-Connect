@@ -22,7 +22,7 @@ function Dashboard() {
         const getData = async () => {
             try {
                 const userResponse = await fetch(
-                    "http://localhost:5000/api/auth/me",
+                    "https://alumni-connect-b13q.onrender.com/api/auth/me",
                     {
                         headers: {
                             Authorization: `Bearer ${token}`,
@@ -37,7 +37,7 @@ function Dashboard() {
                 }
 
                 const profileResponse = await fetch(
-                    "http://localhost:5000/api/profile",
+                    "https://alumni-connect-b13q.onrender.com/api/profile",
                     {
                         headers: {
                             Authorization: `Bearer ${token}`,
@@ -84,7 +84,7 @@ function Dashboard() {
 
         try {
             const response = await fetch(
-                "http://localhost:5000/api/profile",
+                "https://alumni-connect-b13q.onrender.com/api/profile",
                 {
                     method: "POST",
                     headers: {
@@ -114,7 +114,7 @@ function Dashboard() {
 
         try {
             const response = await fetch(
-                "http://localhost:5000/api/profile",
+                "https://alumni-connect-b13q.onrender.com/api/profile",
                 {
                     method: "PUT",
                     headers: {
