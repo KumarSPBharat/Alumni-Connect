@@ -1,0 +1,407 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #1e293b;
+}
+
+/* NAVBAR */
+
+.navbar {
+  background: #0f172a;
+  color: white;
+  padding: 16px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.12);
+}
+
+.navbar h2 {
+  margin: 0;
+  font-size: 24px;
+  letter-spacing: 0.3px;
+}
+
+.navbar button {
+  margin-left: 10px;
+  padding: 9px 16px;
+  border: none;
+  border-radius: 7px;
+  background: transparent;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.navbar button:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* DASHBOARD */
+
+.dashboard {
+  max-width: 1000px;
+  margin: 45px auto;
+  padding: 0 25px;
+}
+
+.dashboard-header {
+  margin-bottom: 30px;
+}
+
+.dashboard-header h1 {
+  margin: 0 0 8px;
+  font-size: 34px;
+  color: #0f172a;
+}
+
+.dashboard-header h2 {
+  margin: 0;
+  font-size: 21px;
+  font-weight: 500;
+  color: #64748b;
+}
+
+/* PROFILE CARD */
+
+.profile-card {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.07);
+  border: 1px solid #e2e8f0;
+}
+
+.profile-card h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: #0f172a;
+}
+
+.profile-card p {
+  margin: 0;
+  padding: 14px 0;
+  border-bottom: 1px solid #e2e8f0;
+  color: #475569;
+}
+
+.profile-card p:last-of-type {
+  border-bottom: none;
+}
+
+.profile-card button {
+  margin-top: 22px;
+  padding: 11px 20px;
+  border: none;
+  border-radius: 7px;
+  background: #2563eb;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.profile-card button:hover {
+  background: #1d4ed8;
+}
+
+/* FORMS */
+
+.profile-card input,
+.profile-card textarea {
+  width: 100%;
+  padding: 13px;
+  margin-bottom: 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.profile-card input:focus,
+.profile-card textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.profile-card textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+/* DIRECTORY */
+
+.directory {
+  max-width: 1000px;
+  margin: 45px auto;
+  padding: 0 25px;
+}
+
+.directory h2 {
+  margin-bottom: 25px;
+  font-size: 30px;
+  color: #0f172a;
+}
+
+.search-box {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 30px;
+  border: 1px solid #cbd5e1;
+  border-radius: 9px;
+  font-size: 15px;
+  background: white;
+}
+
+.search-box:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.alumni-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.alumni-card {
+  background: white;
+  padding: 24px;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 6px 25px rgba(15, 23, 42, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.alumni-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.1);
+}
+
+.alumni-card h3 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: #2563eb;
+  font-size: 20px;
+}
+
+.alumni-card p {
+  margin: 9px 0;
+  color: #64748b;
+}
+
+/* AUTH */
+
+.auth-container {
+  width: 420px;
+  max-width: calc(100% - 40px);
+  margin: 80px auto 20px;
+  padding: 40px;
+  background: white;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(15, 23, 42, 0.1);
+  border: 1px solid #e2e8f0;
+}
+
+.auth-container h1 {
+  margin-bottom: 8px;
+  color: #0f172a;
+}
+
+.auth-container h2 {
+  margin-top: 28px;
+  color: #1e293b;
+}
+
+.auth-subtitle {
+  color: #64748b;
+  margin-bottom: 25px;
+}
+
+.auth-container input {
+  width: 100%;
+  padding: 13px;
+  margin-bottom: 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.auth-container input:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.auth-container form button {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.auth-container form button:hover {
+  background: #1d4ed8;
+}
+
+.switch-button {
+  display: block;
+  margin: 15px auto;
+  border: none;
+  background: transparent;
+  color: #2563eb;
+  cursor: pointer;
+}
+
+.error-message {
+  color: #dc2626;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+  .navbar {
+    padding: 15px 20px;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .navbar div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navbar button {
+    margin: 3px;
+  }
+
+  .dashboard,
+  .directory {
+    margin: 30px auto;
+    padding: 0 18px;
+  }
+
+  .alumni-list {
+    grid-template-columns: 1fr;
+  }
+
+  .auth-container {
+    margin-top: 40px;
+    padding: 30px 22px;
+  }
+}
+
+.dashboard-header h1 {
+  margin: 0 0 8px;
+  font-size: 36px;
+  color: #0f172a;
+}
+
+.dashboard-header p {
+  margin: 0;
+  color: #64748b;
+  font-size: 16px;
+}
+
+/* PROFILE DESIGN */
+
+.profile-top {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.profile-avatar {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: #2563eb;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.profile-top h2 {
+  margin: 0 0 5px;
+  font-size: 25px;
+}
+
+.profile-role {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  color: #64748b !important;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 25px;
+}
+
+.profile-info {
+  padding: 18px;
+  background: #f8fafc;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+}
+
+.profile-info span {
+  display: block;
+  color: #64748b;
+  font-size: 13px;
+  margin-bottom: 7px;
+}
+
+.profile-info strong {
+  color: #1e293b;
+  font-size: 15px;
+}
+
+.bio-section {
+  margin-top: 25px;
+  padding: 20px;
+  background: #f8fafc;
+  border-radius: 10px;
+}
+
+.bio-section span {
+  font-size: 14px;
+  font-weight: bold;
+  color: #475569;
+}
+
+.bio-section p {
+  margin-top: 10px;
+  padding: 0;
+  border: none;
+  line-height: 1.6;
+  color: #64748b;
+}
+
+@media (max-width: 600px) {
+  .profile-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-top h2 {
+    font-size: 21px;
+  }
+}
